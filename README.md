@@ -1,70 +1,97 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Movie Review Website
 
-## Available Scripts
+## Project Description
+The Movie Review Website is a full-stack web application that allows users to browse movies, watch trailers, and leave reviews. The project leverages modern web technologies including Spring Boot for the backend, MongoDB for the database, and React for the frontend. This application provides a seamless and interactive experience for movie enthusiasts to share their opinions and discover new films.
 
-In the project directory, you can run:
+## Table of Contents
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Installation](#installation)
+- [Usage](#usage)
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Features
+- Browse a list of movies with their details.
+- Watch movie trailers directly on the website.
+- Users can register, log in, and log out.
+- Authenticated users can leave reviews for movies.
+- Reviews are stored in a MongoDB database.
+- Responsive design for mobile and desktop views.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Technologies Used
+### Backend
+- **Spring Boot**: Java-based framework used to create the backend RESTful APIs.
+- **MongoDB**: NoSQL database used to store user data and movie reviews.
+- **Maven**: Build automation tool used for managing project dependencies and build lifecycle.
 
-### `npm test`
+### Frontend
+- **React**: JavaScript library used for building user interfaces.
+- **Axios**: Promise-based HTTP client for making requests to the backend APIs.
+- **CSS**: Styling the web application.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Installation
 
-### `npm run build`
+### Prerequisites
+- Java 8 or higher
+- Maven
+- Node.js and npm
+- MongoDB
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Backend Setup
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/YashDhaytonde05/Movie-Tralier-Review.git
+  
+    ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. Build the project using Maven:
+    ```bash
+    mvn clean install
+    ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. Run the Spring Boot application:
+    ```bash
+    mvn spring-boot:run
+    ```
 
-### `npm run eject`
+### Frontend Setup
+1. Navigate to the frontend directory:
+    ```bash
+    cd ../frontend
+    ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+2. Install the required dependencies:
+    ```bash
+    npm install
+    ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3. Start the React application:
+    ```bash
+    npm start
+    ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Usage
+1. Ensure MongoDB is running on your local machine.
+2. Start the backend and frontend servers as described in the installation section.
+3. Open your browser and navigate to `http://localhost:3000`.
+4. Register a new user or log in with an existing account.
+5. Browse movies, watch trailers, and leave reviews.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Screenshots
 
-## Learn More
+*Movie Reviews Page*
+![Screenshot 2024-06-13 130636](https://github.com/YashDhaytonde05/Movie-Tralier-Review/assets/140621749/66d8ad78-32b3-4e5c-bd6a-c43141049231)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+*Movie Trailer Page*
+![Screenshot 2024-06-13 130337](https://github.com/YashDhaytonde05/Movie-Tralier-Review/assets/140621749/c2bd8e43-2df7-484c-a479-e86023e70dbc)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+*Movie Details Page* ![Screenshot 2024-06-13 130251](https://github.com/YashDhaytonde05/Movie-Tralier-Review/assets/140621749/d7d6ed42-bd4f-4525-869d-70313e2a15b6)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
